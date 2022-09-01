@@ -1,7 +1,8 @@
 console.log('my name is sandeep');
 let newsSection = document.getElementById('newsSection');
+let key = "https://newsapi.org/v2/top-headlines?country=in&apiKey=1531b5f93da746239ffd95e6d702034e";
 const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&apiKey=1531b5f93da746239ffd95e6d702034e', true);
+xhr.open('GET', key, true);
 xhr.onload = function () {
     let newsHtml="";
     if (this.status === 200) {
